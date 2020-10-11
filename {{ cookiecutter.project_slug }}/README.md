@@ -28,6 +28,7 @@ Project Organization
     │                         generated with `pip freeze > requirements.txt`
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so project can be imported
+    │
     ├── {{cookiecutter.project_name}}  <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
@@ -44,7 +45,37 @@ Project Organization
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
-     
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+    │
+    ├── .env               <- Environment variables go here, can be read by `python-dotenv` package
+    │
+    ├── sandbox            <- Help to create a sanbdox env to test the project on local.
+    │   │                     Please change only the runtime_requirements.txt file 
+    │   │                     to specify the requirments needed during production runtime
+    │   ├── create_cluster
+    │   ├── run_now
+    │   ├── run_pipeline
+    │   └── runtime_requirements.txt
+    │
+    ├── deployment              <- Scripts to test and deploy in databricks
+    │   ├── deployment.yml      <- Deployment configuration
+    │   │
+    │   ├── cicd-databricks     <- Python package de deploy on databricks
+    │   │
+    │   ├── dev-tests           <- Here goes the dev pipelines test. Excuted when merging to dev
+    │   │   ├── pipeline1
+    │   │   │   ├── job_spec_aws.json
+    │   │   │   └── pipeline_runner.py
+    │   │   │
+    │   ├── integration-tests   <- Here goes the integration pipelines test. Excuted when merging to main
+    │   │   ├── pipeline1
+    │   │   │   ├── job_spec_aws.json
+    │   │   │   └── pipeline_runner.py
+    │   │   │
+    │   └── pipelines           <- Here goes the production job pipelines. Excuted after release and deployment
+    │       └── pipeline1
+    │           ├── job_spec_aws.json
+    │           └── pipeline_runner.py
+    │
+    │ job_spec_aws.json     : Contain model name, cluster configuration, and the job scheduling
+    │ pipeline_runner.py    : The main pipeline script 
+    └──
