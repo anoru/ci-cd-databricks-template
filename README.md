@@ -43,7 +43,7 @@ The directory structure of your new project looks like this:
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │   ├── references     <- Data dictionaries, manuals, and all other explanatory materials.
-    │   ├── reports        <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── reports        <- Generated analysis as HTML, PDF, LaTeX, etc.
     │      └── figures     <- Generated graphics and figures to be used in reporting
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
@@ -109,7 +109,7 @@ The directory structure of your new project looks like this:
 ### References
 ------------
 
-- <p><a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a></p>
+- <p><a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter data science project template</a></p>
 
 - <p><a target="_blank" href="https://docs.databricks.com/dev-tools/ci-cd/ci-cd-jenkins.html">Continuous integration and delivery on Databricks using Jenkins</a></p>
 
@@ -124,9 +124,3 @@ The directory structure of your new project looks like this:
 - <p><a target="_blank" href="https://github.com/mshtelma/lendingclubsscoringdemo">Databricks Labs CI/CD Templates Tutorial - lendingclubsscoringdemo</a></p>
 
 - <p><a target="_blank" href="https://github.com/mshtelma/cicdtestdev">Databricks actions - cicdtestdev</a></p>
-
-
-
-
-
-
