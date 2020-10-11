@@ -38,7 +38,7 @@ jobs:
     - name: Build artifact
       run: |
         python setup.py bdist_wheel
-
+        
     - name: Deploy artifact
       run: |
         python -c "from databrickslabs_cicdtemplates import release_cicd_pipeline; release_cicd_pipeline.main('deployment/integration-tests', 'deployment/pipelines', True);"
