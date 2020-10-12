@@ -2,7 +2,7 @@
   "project_name": "Labs Data Science CICD Templates Sample Project",
   "version": "0.1.0",
   "description": "Labs Data Science CICD Templates Sample Project",
-  "author": "Youssef Hissou, Anouar Zbaida",
+  "author": "Anouar Zbaida",
   "license": "",
   "mlflow_experiment_path": "/Shared/cicd",
   "cloud": "AWS",
